@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WMS Query</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="dependencies/fontawesome/css/all.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="dependencies/flaticon/flaticon.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="dependencies/owl.carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dependencies/owl.carousel/css/owl.theme.default.min.css">
+    <!-- Animated Headlines CSS -->
+    <link rel="stylesheet" href="dependencies/jquery-animated-headlines/css/jquery.animatedheadline.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="dependencies/animate.css/css/animate.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="dependencies/meanmenu/css/meanmenu.min.css">
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="sticky-header">
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  	<![endif]-->
+    <!-- ScrollUp Start Here -->
+    <a href="#wrapper" data-type="section-switch" class="scrollup">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+    <!-- ScrollUp End Here -->
+    <!-- Preloader Start Here -->
+    <div id="preloader"></div>
+    <!-- Preloader End Here -->
+    <div id="wrapper" class="wrapper">
+
+        <!--=====================================-->
+        <!--=            Header Start           =-->
+        <!--=====================================-->
+        <header class="header">
+            <div id="rt-sticky-placeholder"></div>
+            <div id="header-menu" class="header-menu menu-layout1 pd-x-20">
+                <div class="container-fluid">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-2">
+						<!-- -->
+                            <div class="header-action-layout1">
+                                <ul>
+                                    <li class="header-login-icon">
+                                        <a href="account.html" class="color-light" data-toggle="tooltip" data-placement="top" title="Login/Register">
+                                            <i class="far fa-user"></i>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        <!-- -->
+                        </div>
+                        <div class="col-lg-7 d-flex justify-content-end">
+                            <nav id="dropdown" class="template-main-menu">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="has-dropdown">自定义检索框</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a onclick="Title()">Title</a>
+                                            </li>
+                                            <li>
+                                                <a onclick="Name()">Name</a>
+                                            </li>
+                                            <li>
+                                                <a onclick="Abstract()">Abstract</a>
+                                            </li>
+                                            <li>
+                                                <a href="index4.html">Home 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="index5.html">Home 5</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="about.html" class="has-dropdown">搜索热门</a>
+                                        <ul class="mega-menu mega-menu-col-3">
+                                            <li>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="grid-view1.html">Grid View 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="grid-view2.html">Grid View 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="grid-view3.html">Grid View 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="grid-view4.html">Grid View 4</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="list-view1.html">List View 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="list-view2.html">List View 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="list-view3.html">List View 3</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="list-view4.html">List View 4</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="single-product1.html">Single Ad 1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="single-product2.html">Single Ad 2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="store.html">All Stores</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="store-detail.html">Store Details</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="has-dropdown">以图搜图</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="store.html">All Stores</a>
+                                            </li>
+                                            <li>
+                                                <a href="store-detail.html">Store Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="has-dropdown">操作指南</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="blog1.html">Blog – Default Layout</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog2.html">Blog – Standard Layout</a>
+                                            </li>
+                                            <li>
+                                                <a href="single-blog.html">Single Post</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">关于我们</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-lg-3 d-flex justify-content-end">
+                            <div class="header-action-layout1">
+                                <ul>
+                                    <li class="header-btn">
+                                        <a href="post-ad.html" class="item-btn"><i class="fas fa-plus"></i>问题反馈</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--=====================================-->
+        <!--=            Banner Start           =-->
+        <!--=====================================-->
+        <section class="main-banner-wrap-layout1 bg-dark-overlay bg-common minus-mgt-90" data-bg-image="media/banner/t01d3f44415e0c34.bmp">
+            <div class="container">
+                <div class="main-banner-box-layout1 animated-headline">
+                    <h1 class="ah-headline item-title">
+                        <span class="ah-words-wrapper">
+                            <b class="is-visible">Find WMS you need</b>
+                            <b>Find WMS you need</b>
+                        </span>
+                    </h1>
+                    <div class="item-subtitle">地图服务检索系统</div>
+                    <div class="search-box-layout1">
+                        <form>
+                            <div class="row no-gutters" id="searchBox">
+                                <div class="col-lg-3 form-group" id="AbstractDiv">
+                                    <div class="input-search-btn search-keyword">
+                                        <i class="fas fa-text-width"></i>
+                                        <input type="text" class="form-control" placeholder="Enter Abstract here" id="abstract">
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 form-group">
+                                    <button type="button" class="submit-btn" onclick="submit1()"><i class="fas fa-search"></i>Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=====================================
+        <section class="section-padding-top-heading bg-accent">
+            <div class="container">
+                <div class="heading-layout1">
+                    <h2 class="heading-title">Latest Blog Posts</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-box-layout1">
+                            <div class="item-img">
+                                <a href="single-blog.html"><img src="media/blog/blog1.jpg" alt="blog"></a>
+                            </div>
+                            <div class="item-content">
+                                <ul class="post-meta">
+                                    <li>July 10, 2019</li>
+                                    <li>/ <a href="#">RadiusTheme</a></li>
+                                </ul>
+                                <h3 class="post-title"><a href="single-blog.html">Three Powerful Tricks for Online Advertising</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box-layout1">
+                            <div class="item-img">
+                                <a href="single-blog.html"><img src="media/blog/blog2.jpg" alt="blog"></a>
+                            </div>
+                            <div class="item-content">
+                                <ul class="post-meta">
+                                    <li>July 9, 2019</li>
+                                    <li>/ <a href="#">RadiusTheme</a></li>
+                                </ul>
+                                <h3 class="post-title"><a href="single-blog.html">Competitive Analysis for Entrepreneurs 2018</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box-layout1">
+                            <div class="item-img">
+                                <a href="single-blog.html"><img src="media/blog/blog3.jpg" alt="blog"></a>
+                            </div>
+                            <div class="item-content">
+                                <ul class="post-meta">
+                                    <li>July 8, 2019</li>
+                                    <li>/ <a href="#">RadiusTheme</a></li>
+                                </ul>
+                                <h3 class="post-title"><a href="single-blog.html">How To Explode Your Leads With Local Search</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-=====================================-->
+        <!--=       Footer Start           	=-->
+        <!--=====================================-->
+        <footer>
+            <div class="footer-bottom-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="copyright-text">
+                                Copyright &copy; 2020.Company name All rights reserved.武汉大学遥感信息工程学院
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="payment-option">
+                                <a href="#">
+                                    <img src="media/figure/payment.png" alt="payment">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--=====================================-->
+        <!--=       Modal Start           	 	=-->
+        <!--=====================================-->
+        <div class="modal fade modal-location" id="modal-location" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+                        <span class="fas fa-times" aria-hidden="true"></span>
+                    </button>
+                    <div class="location-list">
+                        <h4 class="item-title">Location</h4>
+                        <ul>
+                            <li><a href="#">California</a></li>
+                            <li><a href="#">Kansas</a></li>
+                            <li><a href="#">Louisiana</a></li>
+                            <li><a href="#">New Jersey</a></li>
+                            <li><a href="#">New York</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-location" id="modal-category" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+                        <span class="fas fa-times" aria-hidden="true"></span>
+                    </button>
+                    <div class="location-list">
+                        <h4 class="item-title">Category</h4>
+                        <ul>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category5.png" alt="icon"></span>Business &amp; Industry</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category7.png" alt="icon"></span>Cars &amp; Vehicles</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category14.png" alt="icon"></span>Electronics</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category4.png" alt="icon"></span>Health &amp; Beauty</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category18.png" alt="icon"></span>Hobby, Sport &amp; Kids</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category8.png" alt="icon"></span>Home Appliances</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category6.png" alt="icon"></span>Jobs</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category12.png" alt="icon"></span>Others</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category11.png" alt="icon"></span>Pets &amp; Animals</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category3.png" alt="icon"></span>Property</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="item-icon"><img src="media/category/category1.png" alt="icon"></span>Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Jquery Js -->
+    <script src="dependencies/jquery/js/jquery.min.js"></script>
+    <!-- Popper Js -->
+    <script src="dependencies/popper.js/js/popper.min.js"></script>
+    <!-- Bootstrap Js -->
+    <script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Waypoints Js -->
+    <script src="dependencies/waypoints/js/jquery.waypoints.min.js"></script>
+    <!-- Counterup Js -->
+    <script src="dependencies/jquery.counterup/js/jquery.counterup.min.js"></script>
+    <!-- Owl Carousel Js -->
+    <script src="dependencies/owl.carousel/js/owl.carousel.min.js"></script>
+    <!-- ImagesLoaded Js -->
+    <script src="dependencies/imagesloaded/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Isotope Js -->
+    <script src="dependencies/isotope-layout/js/isotope.pkgd.min.js"></script>
+    <!-- Animated Headline Js -->
+    <script src="dependencies/jquery-animated-headlines/js/jquery.animatedheadline.min.js"></script>
+    <!-- Magnific Popup Js -->
+    <script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <!-- ElevateZoom Js -->
+    <script src="dependencies/elevatezoom/js/jquery.elevateZoom-2.2.3.min.js"></script>
+    <!-- Bootstrap Validate Js -->
+    <script src="dependencies/bootstrap-validator/js/validator.min.js"></script>
+    <!-- Meanmenu Js -->
+    <script src="dependencies/meanmenu/js/jquery.meanmenu.min.js"></script>
+    <!-- Google Map js -->
+    <!-- Site Scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <script>
+        function Title(){
+            if($("#title").length>0){
+                $("#TitleDiv").remove();
+            }else{
+                let html='';
+                html+='<div class="col-lg-3 form-group" id="TitleDiv">';
+                html+=  '<div class="input-search-btn search-keyword">';
+                html+=      '<i class="fas fa-text-width"></i>';
+                html+=      '<input type="text" class="form-control" placeholder="Enter Title here" id="title">'
+                html+=  '</div>';
+                html+='</div>';
+                $("#searchBox").prepend(html);
+            }
+        }
+
+        function Name(){
+            if($("#name").length>0){
+                $("#NameDiv").remove();
+            }else{
+                let html='';
+                html+='<div class="col-lg-3 form-group" id="NameDiv">';
+                html+=  '<div class="input-search-btn search-keyword">';
+                html+=      '<i class="fas fa-text-width"></i>';
+                html+=      '<input type="text" class="form-control" placeholder="Enter Name here" id="name">'
+                html+=  '</div>';
+                html+='</div>';
+                $("#searchBox").prepend(html);
+            }
+        }
+
+        function Abstract(){
+            if($("#abstract").length>0){
+                $("#AbstractDiv").remove();
+            }else{
+                let html='';
+                html+='<div class="col-lg-3 form-group" id="AbstractDiv">';
+                html+=  '<div class="input-search-btn search-keyword">';
+                html+=      '<i class="fas fa-text-width"></i>';
+                html+=      '<input type="text" class="form-control" placeholder="Enter Abstract here" id="abstract">'
+                html+=  '</div>';
+                html+='</div>';
+                $("#searchBox").prepend(html);
+            }
+        }
+
+        function submit1(){
+            let title='';
+            let name='';
+            let abstract='';
+
+            if($("#title").length>0){
+                title=$("#title").val();
+            }
+            if($("#name").length>0){
+                name=$("#name").val();
+            }
+            if($("#abstract").length>0){
+                abstract=$("#abstract").val();
+            }
+
+            $.ajax({
+                type:"get",
+                url:"/getLayer",
+                data:{
+                    title:title,
+                    name:name,
+                    abstract:abstract
+                },
+                dataType:"json",
+                success:function(response){
+                    console.log(response);
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
