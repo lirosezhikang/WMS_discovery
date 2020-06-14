@@ -11,6 +11,5 @@ public class Layer {
     private String Abstract;
     private String keywords;
     private String url;
-    private String extCrs;
     private String imagePath;
 }

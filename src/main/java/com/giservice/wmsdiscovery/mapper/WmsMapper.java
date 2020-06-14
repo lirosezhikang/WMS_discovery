@@ -15,4 +15,7 @@ public interface WmsMapper {
     @Select("SELECT ID,URL,Country,Title,Request,Format,Version FROM wms WHERE Title like '%${title}%'")
     List<Wms> queryWmsByTitle(String title);
 
+    @Select("SELECT uniqueId,contactperson,ContactOrganization,ContactPosition,Address,City,PostCode,Country,ContactVoiceTelephone,ContactElectronicMailAddress,URL FROM contactperson WHERE uniqueId=#{uniqueId}")
+    Wms queryWmsByUniqueId(Integer uniqueId);
+
 }

@@ -4,6 +4,7 @@ import com.giservice.wmsdiscovery.mapper.WmsMapper;
 import com.giservice.wmsdiscovery.model.Wms;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -28,5 +29,13 @@ public class WmsController {
     public List<Wms> GetWmsByTitle(@RequestParam(name = "title") String title){
         List<Wms> wmsList=wmsMapper.queryWmsByTitle(title);
         return wmsList;
+    }
+
+    @GetMapping("/getWms")
+    @ResponseBody
+    @CrossOrigin
+    public Wms GetWms(@RequestParam(name = "serviceId") Integer serviceId){
+        Wms wms=wmsMapper.queryWmsByUniqueId(serviceId);
+        return wms;
     }
 }
